@@ -48,6 +48,7 @@
 #'@export
 #'
 #'@importFrom tools md5sum
+#'@importFrom utils write.table 
 #'
 package_md5sum <- function( package, exclude_MD5 = TRUE ){
     package_path <- find.package( package = package, 

@@ -39,7 +39,7 @@ pdu_pkgDescription(
     pkgDir      = pkgDir, 
     pkgVersion  = "0.1.0", 
     pkgDepends  = NULL, 
-    pkgImports  = NULL, 
+    pkgImports  = c( "utils", "tools" ), 
     pkgSuggests = NULL, 
     RVersion    = NULL 
 )   
