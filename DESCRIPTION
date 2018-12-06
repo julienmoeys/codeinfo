@@ -1,16 +1,17 @@
 Package: codeinfo
 Version: 0.1.0
-Date: 2018-11-21
+Date: 2018-12-06
 Author: Julien Moeys [aut, cre]
-Authors@R: person( given = "Julien", family = "Moeys", role = c("aut", "cre"), email = "jules_m78-soiltexture@@yahooDOTfr" ) 
+Authors@R: person( given = "Julien", family = "Moeys", role = c("aut", "cre"), email = "jules_m78-soiltexture@@yahooDOTfr" )
 Maintainer: Julien Moeys <jules_m78-soiltexture@yahoo.fr>
 Title: Information on the system, version, revision and checksums of selected packages or arbitrary R-objects, for traceability
 Description: Information on the system, version, revision and checksums of selected packages or arbitrary R-objects, for traceability
 Depends: 
-    R (>= 3.5.0) 
+    R (>= 3.5.0)
 LazyLoad: yes
 ByteCompile: yes
-URL: https://github.com/julienmoeys/codeinfo 
+URL: https://github.com/julienmoeys/codeinfo
 BugReports: https://github.com/julienmoeys/codeinfo/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
+RoxygenNote: 6.1.0
