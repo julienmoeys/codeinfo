@@ -4,7 +4,7 @@ Date: 2018-12-06
 Author: Julien Moeys [aut, cre]
 Authors@R: person( given = "Julien", family = "Moeys", role = c("aut", "cre"), email = "jules_m78-soiltexture@@yahooDOTfr" )
 Maintainer: Julien Moeys <jules_m78-soiltexture@yahoo.fr>
-Title: Provides information on the system, version, revision and checksums of selected packages or arbitrary R-objects, for traceability.
+Title: Provides information on the system, version, revision and checksums of selected packages or arbitrary R-objects, for traceability
 Description: Provides information on the system, version, revision and checksums of selected packages or arbitrary R-objects, for traceability.
 Depends: 
     R (>= 3.5.0)
@@ -15,3 +15,6 @@ BugReports: https://github.com/julienmoeys/codeinfo/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 6.1.0
+Imports: 
+    utils,
+    tools
