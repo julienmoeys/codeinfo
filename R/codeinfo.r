@@ -12,7 +12,7 @@
 
 #' Compute the MD5 checksums of each files in an installed package and the checksum of the checksums
 #'
-#' Compute the \code{\link[tools:md5sum]{MD5 checksums} of 
+#' Compute the \code{\link[tools:md5sum]{MD5 checksums}} of 
 #'  each files in an installed package and the checksum of 
 #'  the checksums (i.e. the MD5 checksum of a file containing 
 #'  the checksums of each files in the package)
@@ -30,7 +30,7 @@
 #'  Returns a \code{\link[base]{list}} with two named items: 
 #'  \code{checksums} and \code{checksums_checksum}. 
 #'  \code{checksums} is a \code{\link[base]{data.frame}} with 
-#'  the \code{\link[tools:md5sum]{MD5 checksums} of each files 
+#'  the \code{\link[tools:md5sum]{MD5 checksums}} of each files 
 #'  in the package (the first column contains the checksums 
 #'  and the second column the name and relative path to the 
 #'  file). It is formatted to look alike the \code{MD5} file 
@@ -117,7 +117,7 @@ package_md5sum <- function( package, exclude_MD5 = TRUE ){
 #'@param files 
 #'  Vector of character strings. Name, optionally including 
 #'  the full or relative path (see \code{files_path} below), 
-#'  for which \code{\link[tools:md5sum]{MD5 Checksums} should 
+#'  for which \code{\link[tools:md5sum]{MD5 Checksums}} should 
 #'  be returned. If \code{length(files)} is \code{0} 
 #'  (the default), no information is returned on files.
 #'
@@ -132,7 +132,7 @@ package_md5sum <- function( package, exclude_MD5 = TRUE ){
 #'
 #'@param objects 
 #'  A labelled list of arbitrary R-objects, whose 
-#'  \code{\link[tools:md5sum]{MD5 Checksums} should be 
+#'  \code{\link[tools:md5sum]{MD5 Checksums}} should be 
 #'  returned. For example \code{objects =}\code{list( a = object1, } 
 #'  \code{b = object2}, where \code{object1} and \code{object2} 
 #'  are R-objects and \code{a} and \code{b} are labels.
