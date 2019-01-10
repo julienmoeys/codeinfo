@@ -1,6 +1,10 @@
 
     R package: codeinfo
-
+    
+CHANGES IN VERSION 0.1.1
+    
+    2019/01/10  Added .onAttach() to the package
+    
 CHANGES IN VERSION 0.1.0
     
     2018/12/04  Package created
