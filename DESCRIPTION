@@ -1,6 +1,6 @@
 Package: codeinfo
-Version: 0.1.0
-Date: 2018-12-06
+Version: 0.1.1
+Date: 2019-01-10
 Author: Julien Moeys [aut, cre]
 Authors@R: person( given = "Julien", family = "Moeys", role = c("aut", "cre"), email = "jules_m78-soiltexture@@yahooDOTfr" )
 Maintainer: Julien Moeys <jules_m78-soiltexture@yahoo.fr>
