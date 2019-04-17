@@ -37,12 +37,11 @@ pdu_detach( pkgName = pkgName )
 pdu_pkgDescription( 
     pkgName     = pkgName, 
     pkgDir      = pkgDir, 
-    pkgVersion  = "0.1.1", 
+    pkgVersion  = "0.1.2", 
     pkgDepends  = NULL, 
     pkgImports  = c( "utils", "tools" ), 
     pkgSuggests = NULL, 
-    RVersion    = NULL 
-)   
+    RVersion    = "R (>= 3.1.0)" )   
 
 
 
