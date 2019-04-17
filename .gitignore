@@ -1,5 +1,6 @@
 # Windows shortcuts
 *.lnk
+/inst/REVISION
 
 #   Added later or manually
 /_package_binaries
