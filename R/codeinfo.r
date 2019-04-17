@@ -272,8 +272,8 @@ codeinfo <- function(
             "checksums_checksum"    = NA_character_, 
             stringsAsFactors        = FALSE )   
         
-        revision_names <- c( "GIT_REVISION", "GIT_VERSION", 
-            "SVN_REVISION", "SVN_VERSION", "REVISION" ) 
+        revision_names <- c( "REVISION", "GIT_REVISION", "GIT_VERSION", 
+            "SVN_REVISION", "SVN_VERSION" ) 
         
         out[[ "packages" ]] <- do.call( 
             what = "rbind", args = lapply(
