@@ -189,7 +189,7 @@ package_md5sum <- function( package, exclude_MD5 = TRUE ){
 #'
 #'@importFrom utils sessionInfo
 #'@importFrom utils installed.packages 
-#'@importFrom utils packageDate
+#'@importFrom utils packageDescription
 #'@importFrom tools md5sum
 #'
 codeinfo <- function(
@@ -317,9 +317,27 @@ codeinfo <- function(
                     
                     
                     
-                    out_p[ 1L, "date_packaged" ] <- 
-                        format( utils::packageDate( pkg = p ), 
-                        "%Y-%m-%d" ) 
+                    #   Extract the date at which the 
+                    #   package was build
+                    pack_date <- utils::packageDescription( 
+                        pkg = p ) 
+                    
+                    if( "Built" %in% names( pack_date ) ){
+                        pack_date <- strsplit( 
+                            x     = pack_date[["Built"]],
+                            split = "; ", 
+                            fixed = TRUE )[[ 1L ]][ 3L ]
+                        
+                        pack_date <- as.Date(x = pack_date, 
+                            format = "%Y-%m-%d" )
+                    }else{
+                        pack_date <- as.Date(NA)
+                    }   
+                    
+                    out_p[ 1L, "date_packaged" ] <- pack_date
+                        # format( utils::packageDate( pkg = p ), 
+                        # "%Y-%m-%d" ) 
+                    rm( pack_date ) 
                     
                     
                     
