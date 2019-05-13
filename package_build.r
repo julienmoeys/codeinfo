@@ -37,7 +37,7 @@ pdu_detach( pkgName = pkgName )
 pdu_pkgDescription( 
     pkgName     = pkgName, 
     pkgDir      = pkgDir, 
-    pkgVersion  = "0.1.2", 
+    pkgVersion  = "0.1.3", 
     pkgDepends  = NULL, 
     pkgImports  = c( "utils", "tools" ), 
     pkgSuggests = NULL, 

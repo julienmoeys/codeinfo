@@ -1,6 +1,12 @@
 
     R package: codeinfo
     
+CHANGES IN VERSION 0.1.3
+    
+    2019/05/13  Use utils::packageDescription instead of 
+        utils::packageDate, as the later did not exists 
+        on older versions of R (R 3.3)
+    
 CHANGES IN VERSION 0.1.2
     
     2019/04/17  GIT_REVISION renamed REVISION (internal change)
