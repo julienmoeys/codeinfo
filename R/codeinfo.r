@@ -328,13 +328,15 @@ codeinfo <- function(
                             split = "; ", 
                             fixed = TRUE )[[ 1L ]][ 3L ]
                         
-                        pack_date <- as.Date(x = pack_date, 
+                        pack_date <- as.Date( x = pack_date, 
                             format = "%Y-%m-%d" )
                     }else{
                         pack_date <- as.Date(NA)
                     }   
                     
-                    out_p[ 1L, "date_packaged" ] <- pack_date
+                    out_p[ 1L, "date_packaged" ] <- 
+                        format.Date( x = pack_date, 
+                            format = "%Y-%m-%d" )
                         # format( utils::packageDate( pkg = p ), 
                         # "%Y-%m-%d" ) 
                     rm( pack_date ) 
